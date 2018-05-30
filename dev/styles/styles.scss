@@ -1,0 +1,16 @@
+@import 'setup';
+@import 'typography';
+@import "components/intro";
+@import 'components/about';
+@import 'components/skills';
+@import 'components/portfolio';
+@import 'components/contact';
+@import 'components/footer';
+
+
+
+
+body {
+    background: dodgerblue;
+    color: white;
+}
