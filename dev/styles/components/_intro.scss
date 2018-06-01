@@ -1,0 +1,77 @@
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../../../public/assets/pyramid.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background: rgba(47, 43, 51, 0.9);
+    
+    .headerNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+.headerNav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 2% 0 2% 0;
+    align-items: center;
+    li {
+        justify-content: space-between;
+        margin: 0 20px;
+        a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include fontSize(14);
+        flex-wrap: wrap;
+        font-family: $titleFont;
+        z-index: 20;
+        transition: all 0.7s ease-in-out;
+        &:hover {
+            color: $secondaryColor;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        }
+    }
+}
+
+
+
+.homeLink {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.headerText {
+    padding-top: 15%;
+    // padding-right: 50%;
+    // transform: translate(30%);
+    // margin-left: -10%;
+    // text-shadow: 3px 3px 3px rgb(22, 46, 48);
+}
+
+

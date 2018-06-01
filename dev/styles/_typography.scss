@@ -1,0 +1,38 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: $titleFont;
+    color: white;
+     @include fontSize(75);
+     font-weight: 500;
+    &::after {
+    content: "";
+    display: block;
+    width: 21%;
+    height: 1px;
+    border-bottom: 2px solid #64dce5;
+    }
+}
+
+h2 {
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-family: $bodyFont;
+    @include fontSize(30);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+    font-family: $bodyFont;
+    margin: 0;
+}

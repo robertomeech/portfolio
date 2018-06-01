@@ -1,0 +1,44 @@
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 75px 0;
+
+}
+
+.about h2 {
+    text-align: center;
+    margin: 75px 0;
+    font-weight: bold;
+    &::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 1px;
+    border-bottom: 2px solid #64dce5;
+    margin: auto;
+    padding-top: 10px;
+    }
+}
+
+.textAndPhoto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    .aboutText {
+        width: 48%;
+        p {
+            @include fontSize (16);
+            line-height: 1.5;
+        }
+    }
+    .myPhoto {
+        width: 48%;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
