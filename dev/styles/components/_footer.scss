@@ -5,22 +5,17 @@ footer {
 .footerMain {
     width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
-    .footerLogo {
-        width: 5%;
-        padding-top: 30px;
-        img {
-            width: 100%;
-        }
-    }
     p {
+        text-align: center;
         color: white;
         padding: 25px;
         @include fontSize(16);
     }
-}
+    }
+
 
 
 .footerSocials {
@@ -29,7 +24,6 @@ footer {
 	width: 28.5%;
 	justify-content: center;
     flex-direction: row;
-    padding-top: 30px;
 }
 
 .social {

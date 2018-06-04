@@ -1,21 +1,39 @@
 .contact {
-    padding: 75px 0;
-    height: 80vh;
+    padding: 100px 0;
+    height: 100vh;
+     background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../../public/assets/ottawaContact.jpg);
+     background-size: cover;
+     background-position: center;
 }
 
 .contactContainerFlex {
     display: flex;
     width: 100%;
+    background: rgba(119,119,119,0.7);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px 12px rgba(0,0,0,0.5);
+    h3 {
+        padding-top: 50px;
+        margin-bottom: 25px;
+    }
+    h4 {
+        text-align: center;
+    }
+    a {
+        text-transform: lowercase;
+        &:hover {
+            color: #64dce5;
+        }
+    }
+
 }
 
 .contactBackground {
-    background: black;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    box-shadow: 0px 0px 50px 12px rgba(0,0,0,0.5);
-
 }
 
 .contactFlex {
@@ -38,7 +56,7 @@
         }
         input[type=text] {
             border: none;
-            border-bottom: 2px solid $secondaryColor;
+            border-bottom: 2px solid black;
             background-color: transparent;
             color: white;
             margin-bottom: 20px;
@@ -46,7 +64,7 @@
         }
         input[type=email] {
             border: none;
-            border-bottom: 2px solid $secondaryColor;
+            border-bottom: 2px solid black;
             background-color: transparent;
             color: white;
             margin-bottom: 20px;
@@ -54,7 +72,7 @@
         }
         textarea {
             border: none;
-            border-bottom: 2px solid $secondaryColor;
+            border-bottom: 2px solid black;
             background-color: transparent;
             color: white;
             margin-block-end: 20px;
@@ -67,16 +85,17 @@
             width: 170px;
             padding: 12px 15px;
             border: none;
-            border: 1px solid #64dce5;
-            background: black;
-            color: white;
+            background: #64dce5;
+            color: black;
             text-transform: uppercase;
             @include fontSize(16);
             margin: 0 auto;
             transition: all 0.3s ease-in-out;
             &:hover {
-                background: #64dce5;
+                background: $secondaryColor;
                 color: black;
+                box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+
             }
         }
         

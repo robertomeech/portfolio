@@ -14,15 +14,16 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        margin-bottom: 100px;
+        align-items: center;
+        margin-bottom: 150px;
         .projectPic {
-            width: 45%;
+            width: 47%;
             img {
                 width: 100%;
             }
         }
         .info {
-            width: 45%;
+            width: 47%;
         }
         ul {
             display: flex;

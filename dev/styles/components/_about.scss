@@ -12,15 +12,16 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     .aboutText {
-        width: 48%;
+        width: 64%;
         p {
             @include fontSize (16);
             line-height: 1.5;
         }
     }
     .myPhoto {
-        width: 48%;
+        width: 34%;
         img {
             display: block;
             width: 100%;

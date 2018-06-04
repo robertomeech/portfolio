@@ -1,7 +1,7 @@
 
 header {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../../../public/assets/pyramid.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../../public/assets/ottawa.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -172,7 +172,7 @@ a:hover {
     padding-top: 150px;
     font-family: $titleFont;
   
-    background: $secondaryColor;
+    background: rgba(128,155,206,0.5);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
 
