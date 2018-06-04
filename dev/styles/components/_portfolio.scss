@@ -58,9 +58,25 @@
     }
 }
 
-.project2, .project4 {
-    flex-direction: row-reverse;
+
+.projectFlexWrapper {
+    .project2, .project4 {
+        flex-direction: row-reverse;
+        text-align: right;
+        ul {
+            justify-content: flex-end;
+                li {
+            margin-right: 0px;
+            margin-left: 25px;
+        }
+        }
+        .projectLinks {
+            justify-content: flex-end;
+        }
+    }
 }
+
+
 
 
 

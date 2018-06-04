@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Roberto Meech</title>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Raleway:200,400" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
@@ -17,8 +19,36 @@
         <div class="headerTop">
             <!-- WRAPPER STARTS -->
             <div class="wrapper">
+                <!-- BURGER MENU STARTS -->
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                
+                        <ul id="menu">
+                            <a href="#home">
+                                <li>Home</li>
+                            </a>
+                            <a href="#about">
+                                <li>About me</li>
+                            </a>
+                            <a href="#skills">
+                                <li>Skills</li>
+                            </a>
+                            <a href="#portfolio">
+                                <li>Portfolio</li>
+                            </a>
+                            <a href="#contact">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- BURGER MENU ENDS -->
                 <!-- NAV STARTS -->
-                <nav class="headerNav">
+                <nav class="headerNav animated fadeInLeft">
                         <img class="logo" src="public/assets/meech.png" alt="">
                     <ul>
                         <li>
@@ -42,7 +72,7 @@
             <!-- NAV ENDS -->
         </div>
         <div class="wrapper">
-            <div class="headerText">
+            <div class="headerText animated fadeInRight">
                 <h1>Roberto Meech</h1>
                 <h2>Web Developer</h2>
             </div>
@@ -54,17 +84,17 @@
     <!-- MAIN STARTS -->
     <main>
         <!-- ABOUT SECTION BEGINS -->
-        <section class="about" id="about">
+        <section class="about" id="about" data-aos="fade-in">
             <div class="wrapper">
-                <h3>About Me</h3>
+                <h3 data-aos="fade-in">About Me</h3>
                 <div class="textAndPhoto">
-                    <div class="aboutText">
+                    <div class="aboutText" data-aos="fade-right">
                         <p>Hi, I'm Roberto. I'm a web developer and a recent graduate of HackerYou's Web Development Immersive Bootcamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis reprehenderit unde, id possimus at iusto commodi debitis dicta aliquam harum eveniet minus a vel mollitia magni. Unde dignissimos ipsa ipsum dolor accusantium hic nulla id laudantium nisi eaque, quo, nemo doloribus et at ducimus corrupti maxime optio. Odio totam corporis architecto nobis dolor iure ab sint eveniet impedit ducimus!</p>
                         <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, deleniti harum? Accusamus natus aut ut pariatur nam! Sunt, exercitationem quaerat ea soluta voluptas earum magni numquam totam rerum ut, fugit, corrupti vel veniam ex obcaecati dolor? Ut eius quo animi, repellat porro eligendi illum corrupti ratione fuga alias quos unde!
                         </p>
                     </div>
-                    <div class="myPhoto">
+                    <div class="myPhoto" data-aos="fade-left">
                         <img src="public/assets/headshot.jpg" alt="A photo of me, taken by Pam Lau, in the iconic HackerYou chair.">
                     </div>
                 </div>
@@ -73,7 +103,7 @@
         <!-- ABOUT SECTION ENDS -->
         
         <!-- SKILLS SECTION STARTS -->
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" data-aos="fade-in">
             <div class="wrapper">
                 <h3>Skills</h3>
                 <div class="devSkills">
@@ -131,13 +161,13 @@
         <!-- PORTFOLIO SECTION STARTS -->
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
-                <h3>My Work</h3>
+                <h3 data-aos="fade-in">My Work</h3>
                 <div class="projectFlexWrapper">
                     <div class="project1 project">
-                        <div class="project1Image projectPic">
+                        <div class="project1Image projectPic" data-aos="fade-right">
                             <img src="public/assets/sunRun.png" alt="">
                         </div>
-                        <div class="project1Info info">
+                        <div class="project1Info info" data-aos="fade-left">
                             <h4>Sun Run</h4>
                             <ul>
                                 <li>React</li>
@@ -155,10 +185,10 @@
                         </div>
                     </div>
                     <div class="project2 project">
-                        <div class="project2Image projectPic">
+                        <div class="project2Image projectPic" data-aos="fade-left">
                             <img src="public/assets/liveMusicWishList.png" alt="">
                         </div>
-                        <div class="project2Info info">
+                        <div class="project2Info info" data-aos="fade-right">
                             <h4>Live Music WishList</h4>
                             <ul>
                                 <li>React</li>
@@ -174,10 +204,10 @@
                         </div>
                     </div>
                     <div class="project3 project">
-                        <div class="project3Image projectPic">
+                        <div class="project3Image projectPic" data-aos="fade-right">
                             <img src="public/assets/nailThatInterview.png" alt="">
                         </div>
-                        <div class="project3Info info">
+                        <div class="project3Info info" data-aos="fade-left">
                             <h4>Nail That Interview</h4>
                             <ul>
                                 <li>JavaScript</li>
@@ -192,10 +222,10 @@
                         </div>
                     </div>
                     <div class="project4 project">
-                        <div class="project4Image projectPic">
+                        <div class="project4Image projectPic" data-aos="fade-left">
                             <img src="public/assets/lisbon.png" alt="">
                         </div>
-                        <div class="project4Info info">
+                        <div class="project4Info info" data-aos="fade-right">
                             <h4>Lisbon</h4>
                             <ul>
                                 <li>HTML5</li>
@@ -214,7 +244,7 @@
         <!-- PORTFOLIO SECTION ENDS -->
         
         <!-- CONTACT SECTION STARTS -->
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" data-aos="fade-in">
             <div class="wrapper">
                 <h3>Contact Me</h3>
                 <div class="contactContainerFlex">
@@ -229,7 +259,7 @@
                                 <input type="email" name="email" placeholder="Your Email" id="email" required="true">
                     
                                 <label for="Message" class="visuallyhidden">Message</label>
-                                <textarea name="message" cols="45" rows="15" required="true" id="message" placeholder="Your Message"></textarea>
+                                <textarea name="message" cols="45" rows="7" required="true" id="message" placeholder="Your Message"></textarea>
                     
                                 <button type="submit" class="submit">Send it!</button>
                             </form>
@@ -278,8 +308,9 @@
                 </div>
             </div>
         </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-    <script src="public/scripts/site.js"></script>
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+        <script src="public/scripts/site.js"></script>
 </body>
 </html>

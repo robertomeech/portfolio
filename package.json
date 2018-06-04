@@ -20,6 +20,8 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
+    "aos": "^2.3.0",
     "hover.css": "^2.3.1"
   }
 }

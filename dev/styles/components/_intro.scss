@@ -1,7 +1,7 @@
 
 header {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../../../public/assets/ottawa.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../../../public/assets/pyramid.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -12,7 +12,7 @@ header {
     height: 50px;
 }
 .wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -68,13 +68,145 @@ header {
 }
 
 .headerText {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 300px;
+    text-align: center;
 }
 
 
+
+// BURGER NAV
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+}
+
+a:hover {
+    color: black;
+}
+
+#menuToggle {
+    position: relative;
+    top: 20px;
+    right: 30px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 5%;
+    display: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -10px;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 2; 
+    
+    -webkit-touch-callout: none;
+}
+
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: white;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.87,0.2,0.55,1.0),
+                background 0.5s cubic-bezier(0.87,0.2,0.55,1.0),
+                opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 210px;
+    margin: -100px 0 0 -75px;
+    padding: 25px;
+    padding-top: 150px;
+    font-family: $titleFont;
+  
+    background: $secondaryColor;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+    padding: 5.5px 35px;
+    font-size: 16px;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+
+
+@media (max-width: 800px) {
+    #menuToggle {
+        display: inline-block;
+    }
+    .headerNav ul {
+        display: none;
+    }
+    .headerTop .headerNav {
+       display: none;
+    }
+
+    .headerTop {
+        height: 60px;
+    }
+
+}
