@@ -18,5 +18,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.5.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.1"
   }
 }

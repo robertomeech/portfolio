@@ -3,7 +3,10 @@ $(document).ready(function () {
     console.log(`ready`);
 });
 
-//SMOOTH SCROLL
-$('a#home, a#about, #skills, #portfolio').smoothScroll({
-    speed: 500,
+
+
+$(function(){
+    $('nav a').smoothScroll({
+        speed: 500,
+    });
 });

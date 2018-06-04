@@ -1,9 +1,10 @@
 
 header {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../../../public/assets/pyramid.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../../../public/assets/ottawa.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .logo {
@@ -21,7 +22,7 @@ header {
     position: fixed;
     z-index: 10;
     width: 100%;
-    background: rgba(47, 43, 51, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     
     .headerNav {
         display: flex;
@@ -67,11 +68,13 @@ header {
 }
 
 .headerText {
-    padding-top: 15%;
-    // padding-right: 50%;
-    // transform: translate(30%);
-    // margin-left: -10%;
-    // text-shadow: 3px 3px 3px rgb(22, 46, 48);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 

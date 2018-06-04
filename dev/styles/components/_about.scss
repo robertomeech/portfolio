@@ -6,20 +6,6 @@
 
 }
 
-.about h2 {
-    text-align: center;
-    margin: 75px 0;
-    font-weight: bold;
-    &::after {
-    content: "";
-    display: block;
-    width: 10%;
-    height: 1px;
-    border-bottom: 2px solid #64dce5;
-    margin: auto;
-    padding-top: 10px;
-    }
-}
 
 .textAndPhoto {
     display: flex;

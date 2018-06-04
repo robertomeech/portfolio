@@ -1,5 +1,5 @@
 $primaryColor: #463f8c;
-$secondaryColor: #809bce;;
+$secondaryColor: #809bce;
 $tertiaryColor: #777777;
 
 $titleFont: 'Montserrat', sans-serif;
@@ -12,4 +12,6 @@ $bodyFont: 'Raleway', sans-serif;
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
+
 }

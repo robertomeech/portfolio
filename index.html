@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Raleway:200,400" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
@@ -17,22 +19,22 @@
             <div class="wrapper">
                 <!-- NAV STARTS -->
                 <nav class="headerNav">
-                        <img class="logo"  src="public/assets/meech.png" alt="">
+                        <img class="logo" src="public/assets/meech.png" alt="">
                     <ul>
                         <li>
-                            <a href="#home" class="homeLink linkTransition">Home</a>
+                            <a href="#home" class="homeLink smoothScroll">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="linkTransition">About me</a>
+                            <a href="#about" class="smoothScroll">About me</a>
                         </li>
                         <li>
-                            <a href="#skills" class="linkTransition">Skills</a>
+                            <a href="#skills" class="smoothScroll">Skills</a>
                         </li>
                         <li>
-                            <a href="#portfolio "class="linkTransition">Portfolio</a>
+                            <a href="#portfolio" class="smoothScroll">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact "class="linkTransition">Contact</a>
+                            <a href="#contact" class="smoothScroll">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,10 +56,10 @@
         <!-- ABOUT SECTION BEGINS -->
         <section class="about" id="about">
             <div class="wrapper">
-                <h2>About Me</h2>
+                <h3>About Me</h3>
                 <div class="textAndPhoto">
                     <div class="aboutText">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime eum, earum autem fuga voluptates debitis dolore blanditiis repellendus nihil nesciunt quos eaque distinctio aliquid quod iusto, iste excepturi inventore temporibus. Eius cumque cum consequatur nihil tenetur, vero, totam qui quasi fuga ipsa maxime facere deleniti! Ea ullam assumenda veniam porro sunt, voluptatum odio, accusantium dicta repellendus tenetur tempora iusto sed!</p>
+                        <p>Hi, I'm Roberto. I'm a web developer and a recent graduate of HackerYou's Web Development Immersive Bootcamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis reprehenderit unde, id possimus at iusto commodi debitis dicta aliquam harum eveniet minus a vel mollitia magni. Unde dignissimos ipsa ipsum dolor accusantium hic nulla id laudantium nisi eaque, quo, nemo doloribus et at ducimus corrupti maxime optio. Odio totam corporis architecto nobis dolor iure ab sint eveniet impedit ducimus!</p>
                         <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, deleniti harum? Accusamus natus aut ut pariatur nam! Sunt, exercitationem quaerat ea soluta voluptas earum magni numquam totam rerum ut, fugit, corrupti vel veniam ex obcaecati dolor? Ut eius quo animi, repellat porro eligendi illum corrupti ratione fuga alias quos unde!
                         </p>
@@ -73,7 +75,7 @@
         <!-- SKILLS SECTION STARTS -->
         <section class="skills" id="skills">
             <div class="wrapper">
-                <h2>Skills</h2>
+                <h3>Skills</h3>
                 <div class="devSkills">
                     <ul>
                         <li>
@@ -129,7 +131,84 @@
         <!-- PORTFOLIO SECTION STARTS -->
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
-                <h2>My Work</h2>
+                <h3>My Work</h3>
+                <div class="projectFlexWrapper">
+                    <div class="project1 project">
+                        <div class="project1Image projectPic">
+                            <img src="public/assets/sunRun.png" alt="">
+                        </div>
+                        <div class="project1Info info">
+                            <h4>Sun Run</h4>
+                            <ul>
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>Gulp</li>
+                                <li>API</li>
+                                <li>JavaScript</li>
+                                <li>CSS3/Sass</li>
+                            </ul>
+                            <p>A running application that allows users to plan and save their runs in relation to the Sunrise and Sunset API. Users can choose to get their run in before the sunset or use the GoogleMaps API to get to a landmark or destination just in time for the sunrise. This application was created in collaboration with two other students.</p>
+                            <div class="projectLinks">
+                                <a href="https://sunrisesunset-1527022043864.firebaseapp.com/">View Live</a>
+                                <a href="https://github.com/robertomeech/sun-run">View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project2 project">
+                        <div class="project2Image projectPic">
+                            <img src="public/assets/liveMusicWishList.png" alt="">
+                        </div>
+                        <div class="project2Info info">
+                            <h4>Live Music WishList</h4>
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>API</li>
+                                <li>CSS3/Sass</li>
+                            </ul>
+                            <p>A live music app which populates artist upcoming events upon user input using SongKick's API. Once the list of events are generated, the user can choose to add one or more to their WishList or buy tickets.</p>
+                            <div class="projectLinks">
+                                <a href="https://livemusicwishlist1234.firebaseapp.com/">View Live</a>
+                                <a href="https://github.com/robertomeech/live-music-wishList">View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project3 project">
+                        <div class="project3Image projectPic">
+                            <img src="public/assets/nailThatInterview.png" alt="">
+                        </div>
+                        <div class="project3Info info">
+                            <h4>Nail That Interview</h4>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3/Sass</li>
+                            </ul>
+                            <p>A quirky quiz that will help you land your next job! Answer each question and a unique job interview cheatsheet will be generated at the end based on the user's answers.</p>
+                            <div class="projectLinks">
+                                <a href="http://robertomeech.com/project3/">View Live</a>
+                                <a href="https://github.com/robertomeech/nail-that-interview">View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project4 project">
+                        <div class="project4Image projectPic">
+                            <img src="public/assets/lisbon.png" alt="">
+                        </div>
+                        <div class="project4Info info">
+                            <h4>Lisbon</h4>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3/Sass</li>
+                            </ul>
+                            <p>A classic PSD to a responsive website conversion.</p>
+                            <div class="projectLinks">
+                                <a href="https://robertomeech.github.io/lisbon/">View Live</a>
+                                <a href="https://github.com/robertomeech/lisbon">View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- PORTFOLIO SECTION ENDS -->
@@ -137,7 +216,26 @@
         <!-- CONTACT SECTION STARTS -->
         <section class="contact" id="contact">
             <div class="wrapper">
-                
+                <h3>Contact Me</h3>
+                <div class="contactContainerFlex">
+                    <div class="contactBackground">
+                        <div class="contactFlex">
+                            <form action="https://formspree.io/roberto.meech@gmail.com" method="POST" name="contactMe" autocomplete="off">
+                    
+                                <label for="fullName" class="visuallyhidden"> Name</label>
+                                <input type="text" name="fullName" class="nameInput" placeholder="Your Name" id="fullName">
+                    
+                                <label for="email" class="visuallyhidden">Email</label>
+                                <input type="email" name="email" placeholder="Your Email" id="email" required="true">
+                    
+                                <label for="Message" class="visuallyhidden">Message</label>
+                                <textarea name="message" cols="45" rows="15" required="true" id="message" placeholder="Your Message"></textarea>
+                    
+                                <button type="submit" class="submit">Send it!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- CONTACT SECTION ENDS -->
@@ -147,11 +245,41 @@
         <!-- FOOTER STARTS -->
         <footer>
             <div class="wrapper">
-                
+                <div class="footerMain">
+                    <div class="footerSocials">
+                        <div class="social">
+                            <a href="https://twitter.com/RobertoMeech">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://github.com/robertomeech">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.instagram.com/meechswag/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/roberto-ignacio-meech/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footerLogo">
+                        <img src="public/assets/meech.png" alt="">
+                    </div>
+                    <p>© Roberto Ignacio Meech 2018 | Headshot by Pam Lau</p>
+                    <div class="footerBottom">
+
+                    </div>
+                </div>
             </div>
         </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="public/scripts/site.js"></script>
 </body>
 </html>
