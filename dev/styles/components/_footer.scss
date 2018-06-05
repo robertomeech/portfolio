@@ -8,11 +8,17 @@ footer {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    @media(max-width: 807px) {
+        flex-direction: column;
+    }
     p {
-        text-align: center;
+        text-align: left;
         color: white;
-        padding: 25px;
+        padding: 25px 0;
         @include fontSize(16);
+        @media(max-width: 504px) {
+            @include fontSize(14)
+        }
     }
     }
 
@@ -35,7 +41,8 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	background: $secondaryColor;
-	margin-right: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
     transition: all 0.3s ease-in-out;
     a {
         text-decoration: none;

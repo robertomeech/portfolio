@@ -31,9 +31,21 @@
             width: 25%;
             padding-top: 30px;
             padding-bottom: 30px;
+            img.jQuery {
+                @media(max-width: 700px) {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+            @media(max-width: 700px) {
+                width: 33.3%;
+            }
             i {
                 font-size: 100px;
                 color: #809bce;
+                @media(max-width: 700px) {
+                    font-size: 65px;
+                }
             }
             p {
                 padding-top: 10px;
@@ -43,6 +55,10 @@
                fill: $secondaryColor;
                width: 100px;
                height: 100px;
+               @media(max-width: 700px) {
+                    width: 65px;
+                    height: 65px;
+                }
             }
         }
 

@@ -19,6 +19,9 @@
     }
     h4 {
         text-align: center;
+        @media(max-width: 585px) {
+            @include fontSize(18);
+        }
     }
     a {
         text-transform: lowercase;

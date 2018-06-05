@@ -7,6 +7,9 @@ h1 {
     color: white;
      @include fontSize(75);
      font-weight: 500;
+     @media(max-width: 440px) {
+         @include fontSize(60);
+     }
     &::after {
     content: "";
     display: block;

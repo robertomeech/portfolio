@@ -3,7 +3,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 75px 0;
-
 }
 
 
@@ -13,15 +12,29 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 800px) {
+        flex-direction: column-reverse;
+    }
     .aboutText {
         width: 64%;
         p {
             @include fontSize (16);
             line-height: 1.5;
+
         }
-    }
+        @media(max-width: 807px) {
+            width: 70%;
+            margin-top: 25px;
+        }
+        }
     .myPhoto {
         width: 34%;
+        @media(max-width: 1090px) {
+            width: 55%;
+        }
+        @media(max-width:950px) {
+            width: 70%;
+        }
         img {
             display: block;
             width: 100%;

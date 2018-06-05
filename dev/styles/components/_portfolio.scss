@@ -12,18 +12,30 @@
     .project {
         width: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;;
         justify-content: space-between;
-        align-items: center;
         margin-bottom: 150px;
+        @media(max-width: 807px) {
+        flex-direction: column;
+        
+    }
         .projectPic {
             width: 47%;
+            @media(max-width: 807px) {
+                width: 100%;
+            }
             img {
                 width: 100%;
             }
         }
         .info {
             width: 47%;
+            @media(max-width: 807px) {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
         }
         ul {
             display: flex;
@@ -31,19 +43,41 @@
             padding: 0;
             align-items: center;
             flex-wrap: wrap;
+            @media(max-width: 807px) {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                line-height: 2;
+            }
         }
         li {
             margin-right:25px;
             @include fontSize(16);
             font-family: $titleFont;
             color: $secondaryColor;
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
         .projectLinks {
             display: flex;
             align-items: flex-end;
             margin-top: 25px;
+            @media(max-width: 807px) {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            @media(max-width: 400px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
             a {
                 text-decoration: none;
+                text-align:center;
                 color: white;
                 background: $secondaryColor;
                 padding: 15px 25px;
@@ -51,6 +85,14 @@
                 @include fontSize(16);
                 font-family: $titleFont;
                 transition: box-shadow 0.3s ease-in-out;
+                @media(max-width: 400px) {
+                    width: 250px;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
                 &:hover {
                     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
                 }
@@ -64,18 +106,61 @@
     .project2, .project4 {
         flex-direction: row-reverse;
         text-align: right;
-        ul {
-            justify-content: flex-end;
-                li {
+         @media(max-width: 807px) {
+        flex-direction: column;
+        h4.desktopTitle {
+            text-align: right;
+            padding-bottom: 25px;
+            @media(max-width: 807px) {
+                display: none;
+            }
+        }
+    }
+    ul {
+        justify-content: flex-end;
+        @media(max-width: 807px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        li {
             margin-right: 0px;
             margin-left: 25px;
         }
-        }
-        .projectLinks {
-            justify-content: flex-end;
+    }
+    .projectLinks {
+        justify-content: flex-end;
+        @media(max-width: 807px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
+}
+
+.project .desktopTitle {
+    padding-bottom: 25px;
+    @media(max-width: 807px) {
+        display: none;
+    }
+}
+
+h4.projectTitleTop {
+    display: none;
+    text-align: center;
+    margin-bottom: 25px;
+    @media(max-width: 807px) {
+        display: block;
+    }
+}
+
+
+
+
 
 
 
