@@ -17,6 +17,9 @@
         margin-bottom: 150px;
         @media(max-width: 807px) {
         flex-direction: column;
+        @media(max-width: 450px) {
+            margin-bottom: 50px;
+        }
         
     }
         .projectPic {

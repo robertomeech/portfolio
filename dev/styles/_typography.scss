@@ -28,6 +28,9 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     color: $secondaryColor;
+    @media(max-width: 865px) {
+        margin-left: 0;
+    }
 }
 
 h3 {

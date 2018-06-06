@@ -75,6 +75,9 @@ header {
     margin: 0 auto;
     padding-top: 300px;
     text-align: center;
+    @media(max-width: 600px) {
+        padding: 150px;
+    }
 }
 
 

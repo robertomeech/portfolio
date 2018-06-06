@@ -1,6 +1,5 @@
 .contact {
     padding: 100px 0;
-    height: 100vh;
      background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../../public/assets/ottawaContact.jpg);
      background-size: cover;
      background-position: center;
@@ -9,22 +8,26 @@
 .contactContainerFlex {
     display: flex;
     width: 100%;
-    background: rgba(119,119,119,0.7);
+    // background: rgba(119,119,119,0.7);
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 50px 12px rgba(0,0,0,0.5);
+    color: white;
     h3 {
-        padding-top: 50px;
         margin-bottom: 25px;
     }
     h4 {
+        @include fontSize(18);
         text-align: center;
+        font-family: $bodyFont;
+        margin-bottom: 15px;
         @media(max-width: 585px) {
             @include fontSize(18);
         }
     }
     a {
         text-transform: lowercase;
+
         &:hover {
             color: #64dce5;
         }
@@ -50,40 +53,43 @@
         flex-direction: column;
         width: 90%;
         padding: 20px 0;
+        @media(max-width: 600px) {
+            width: 100%;
+        }
         input {
             width: 100%;
             padding-left: 15px;
             text-transform: uppercase;
             padding-top: 20px;
+            padding-bottom: 20px;
 
         }
         input[type=text] {
             border: none;
             border-bottom: 2px solid black;
-            background-color: transparent;
-            color: white;
+            background-color: white;
+            color: black;
             margin-bottom: 20px;
-            padding-bottom: 5px;
         }
         input[type=email] {
             border: none;
             border-bottom: 2px solid black;
-            background-color: transparent;
-            color: white;
+            background-color: white;
+            color: black;
             margin-bottom: 20px;
-            padding-bottom: 5px;
         }
         textarea {
             border: none;
             border-bottom: 2px solid black;
-            background-color: transparent;
-            color: white;
+            background-color: white;
+            color: black;
             margin-block-end: 20px;
             padding-left: 15px;
+            padding-top: 20px;
             text-transform: uppercase;
-
-
+            resize: none;
         }
+
         button {
             width: 170px;
             padding: 12px 15px;
@@ -91,6 +97,7 @@
             background: #64dce5;
             color: black;
             text-transform: uppercase;
+            font-weight: bold;
             @include fontSize(16);
             margin: 0 auto;
             transition: all 0.3s ease-in-out;

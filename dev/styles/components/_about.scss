@@ -20,10 +20,11 @@
         p {
             @include fontSize (16);
             line-height: 1.5;
+            margin-bottom: 20px;
 
         }
         @media(max-width: 807px) {
-            width: 70%;
+            width: 100%;
             margin-top: 25px;
         }
         }
