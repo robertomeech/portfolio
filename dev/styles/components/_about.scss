@@ -8,7 +8,7 @@
 
 .textAndPhoto {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -21,17 +21,21 @@
             @include fontSize (16);
             line-height: 1.5;
             margin-bottom: 20px;
-
         }
-        @media(max-width: 807px) {
+
+            @media(max-width: 1090px) {
+                margin-right: 15px;
+                width: 50%;
+        }
+        @media(max-width: 950px) {
             width: 100%;
             margin-top: 25px;
         }
         }
     .myPhoto {
-        width: 34%;
+        width: 30%;
         @media(max-width: 1090px) {
-            width: 55%;
+            width: 45%;
         }
         @media(max-width:950px) {
             width: 70%;
@@ -42,4 +46,7 @@
         }
     }
 }
+
+
+
 

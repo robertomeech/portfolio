@@ -1,7 +1,7 @@
-$(document).ready(function () {
-    window.location.hash = '';
-    console.log(`ready`);
-});
+// $(document).ready(function () {
+//     window.location.hash = '';
+//     console.log(`ready`);
+// });
 
 
 
